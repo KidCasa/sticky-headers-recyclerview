@@ -145,4 +145,8 @@ public class StickyRecyclerHeadersDecoration extends RecyclerView.ItemDecoration
   public void invalidateHeaders() {
     mHeaderProvider.invalidate();
   }
+
+  public void setStickyHeaderTopOffset(int offset) {
+    mHeaderPositionCalculator.setStickyTopOffset(offset);
+  }
 }
